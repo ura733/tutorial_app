@@ -9,7 +9,7 @@ render_views
       it 'home response successflly' do
         get :home
         expect(response).to have_http_status(:success)
-        assert_select "title", "Home | #{base_title}"
+        assert_select "title", "#{base_title}"
       end
     end
 
