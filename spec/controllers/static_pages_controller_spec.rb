@@ -29,5 +29,13 @@ render_views
       end
     end
 
+    describe 'Contact Page' do
+      it 'contact response successflly'do
+        get :contact
+        expect(response).to have_http_status(:success)
+        assert_select "title", "Contact | #{base_title}"
+      end
+    end
+
   end
 end

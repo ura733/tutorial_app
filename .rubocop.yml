@@ -1,0 +1,11 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+  - .rubocop_todo.yml
+AllCops:
+  Exclude:
+    - vendor/**/*
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'lib/tasks/_force_reload.rake'
